@@ -155,41 +155,202 @@
             </div>
             <div class="card-body">
               <div class="form-group">
-                <label for="inputName">Nome da Gestante</label>
-                <input type="text" id="inputName" class="form-control">
+                <div class="row">
+                  <div class="col-md-4">
+                    <label for="inputName">Unidade de Saúde (UBS)</label> <span style="color:red">*</span>                
+                    <select id="inputName" class="form-control custom-select">
+                      <option selected disabled>Selecione</option>
+                    </select>
+                  </div>
+                </div><br />
+                <div class="row">
+                  <div class="col-md-12">
+                    <label for="inputName">Nome do Paciente</label>
+                    <input type="text" id="inputName" class="form-control">
+                  </div>
+                </div><br />
+                <div class="row">
+                  <div class="col-md-6">
+                    <label for="inputName">Número da Notificação</label>
+                    <input type="text" id="inputName" class="form-control">
+                  </div>
+                  <div class="col-md-4">
+                    <label for="inputName">Data da Notificação</label>
+                    <input type="date" id="inputName" class="form-control"> 
+                  </div>
+                </div><br />
+                <div class="row">
+                  <div class="col-md-4">
+                    <label for="inputName">Data de Nascimento</label>
+                    <input type="date" id="inputName" class="form-control">
+                  </div>
+                  <div class="col-md-2">&nbsp;</div>
+                  <div class="col-md-4">
+                    <label for="inputName">Data da realização do teste</label>
+                    <input type="date" id="inputName" class="form-control"> 
+                  </div>
+                </div><br />
+                <div class="row">
+                  <div class="col-md-12">
+                    <label for="inputName">Estágio Clínico</label>                   
+                    <div class="custom-control custom-checkbox">
+                      <input class="custom-control-input" type="checkbox" id="customCheckbox1" value="option1">
+                      <label for="customCheckbox1" class="custom-control-label">Sífilis Recente(com menos de 2 anos de evolução; sífilis primária, secundária e latente recente.)</label><br />                     
+                    </div>
+                    <div class="custom-control custom-checkbox">                      
+                      <input class="custom-control-input" type="checkbox" id="customCheckbox2" value="option1">
+                      <label for="customCheckbox2" class="custom-control-label">Sífilis Tardia(com mais de 2 anos de evolução; sífilis latente tardia ou latente com duração ignorada e síflis terciária.)</label><br />                     
+                    </div>
+                    <div class="custom-control custom-checkbox">                      
+                      <input class="custom-control-input" type="checkbox" id="customCheckbox3" value="option1">
+                      <label for="customCheckbox3" class="custom-control-label">Neurosífilis</label>
+                    </div>
+                  </div>
+                </div><br />
+                <div class="row">
+                  <div class="col-md-12">
+                    <label for="inputName">Esquema Terapêutico</label>
+                    <div class="custom-control custom-checkbox">
+                      <input class="custom-control-input" type="checkbox" id="customCheckbox4" value="option1">
+                      <label for="customCheckbox4" class="custom-control-label">Penicilina G benzatina 2,4 milhões UI,IM dose única.</label><br />                      
+                    </div>
+                    <div class="custom-control custom-checkbox">                      
+                      <input class="custom-control-input" type="checkbox" id="customCheckbox5" value="option1">
+                      <label for="customCheckbox5" class="custom-control-label">Penicilina G benzatina 2,4 milhões UI,IM Semanal por 3 semanas.</label><br />                      
+                    </div>
+                    <div class="custom-control custom-checkbox">                      
+                      <input class="custom-control-input" type="checkbox" id="customCheckbox6" value="option1">
+                      <label for="customCheckbox6" class="custom-control-label">Penicilina Cristalina 18-24 milhões UV dia, IV, administrada em doses de 3 a 4 milhões de UI, a cada 4 horas ou por infusão contínua por 14 dias.</label>
+                    </div>
+                  </div>
+                </div><br />
+                <div class="row">                  
+                  <div class="col-md-4">
+                    <label for="inputName">Data da 1ª Dose</label>
+                    <input type="date" id="inputName" class="form-control"> 
+                  </div>
+                  <div class="col-md-4">
+                    <label for="inputName">Data da 2ª Dose</label>
+                    <input type="date" id="inputName" class="form-control"> 
+                  </div>
+                  <div class="col-md-4">
+                    <label for="inputName">Data da 3ª Dose</label>
+                    <input type="date" id="inputName" class="form-control"> 
+                  </div>
+                </div><br />
+                <div class="row"> 
+                  <h4>&nbsp;&nbsp;VDRL 1</h4><hr />               
+                  <div class="col-md-4">
+                    <label for="inputName">Data</label>
+                    <input type="date" id="inputName" class="form-control"> 
+                  </div>
+                  <div class="col-md-4">
+                    <label for="inputName">Valor</label>
+                    <input type="text" id="inputName" class="form-control"> 
+                  </div>                 
+                </div><br />
+                <div class="row"> 
+                  <h4>&nbsp;&nbsp;VDRL 2</h4><hr />               
+                  <div class="col-md-4">
+                    <label for="inputName">Data</label>
+                    <input type="date" id="inputName" class="form-control"> 
+                  </div>
+                  <div class="col-md-4">
+                    <label for="inputName">Valor</label>
+                    <input type="text" id="inputName" class="form-control"> 
+                  </div>                 
+                </div><br />
+                <div class="row"> 
+                  <h4>&nbsp;&nbsp;VDRL 3</h4><hr />               
+                  <div class="col-md-4">
+                    <label for="inputName">Data</label>
+                    <input type="date" id="inputName" class="form-control"> 
+                  </div>
+                  <div class="col-md-4">
+                    <label for="inputName">Valor</label>
+                    <input type="text" id="inputName" class="form-control"> 
+                  </div>                 
+                </div><br />
+                <div class="row"> 
+                  <h4>&nbsp;&nbsp;VDRL 4</h4><hr />               
+                  <div class="col-md-4">
+                    <label for="inputName">Data</label>
+                    <input type="date" id="inputName" class="form-control"> 
+                  </div>
+                  <div class="col-md-4">
+                    <label for="inputName">Valor</label>
+                    <input type="text" id="inputName" class="form-control"> 
+                  </div>                 
+                </div><br />
+                <div class="row"> 
+                  <h4>&nbsp;&nbsp;VDRL 5</h4><hr />               
+                  <div class="col-md-4">
+                    <label for="inputName">Data</label>
+                    <input type="date" id="inputName" class="form-control"> 
+                  </div>
+                  <div class="col-md-4">
+                    <label for="inputName">Valor</label>
+                    <input type="text" id="inputName" class="form-control"> 
+                  </div>                 
+                </div><br />
+                <div class="row"> 
+                  <h4>&nbsp;&nbsp;VDRL 6</h4><hr />               
+                  <div class="col-md-4">
+                    <label for="inputName">Data</label>
+                    <input type="date" id="inputName" class="form-control"> 
+                  </div>
+                  <div class="col-md-4">
+                    <label for="inputName">Valor</label>
+                    <input type="text" id="inputName" class="form-control"> 
+                  </div>                 
+                </div><br />
+                <div class="row"> 
+                  <h4>&nbsp;&nbsp;VDRL 7</h4><hr />               
+                  <div class="col-md-4">
+                    <label for="inputName">Data</label>
+                    <input type="date" id="inputName" class="form-control"> 
+                  </div>
+                  <div class="col-md-4">
+                    <label for="inputName">Valor</label>
+                    <input type="text" id="inputName" class="form-control"> 
+                  </div>                 
+                </div><br />
+                <div class="row">
+                  <div class="col-md-12">
+                    <label for="inputDescription">Observações</label>
+                    <textarea id="inputDescription" class="form-control" rows="4"></textarea>
+                  </div>
+                </div><br />
+                <div class="row">
+                  <div class="col-md-12">
+                    <label for="inputName">Tratamento</label>
+                    <div class="custom-control custom-checkbox">
+                      <input class="custom-control-input" type="checkbox" id="customCheckbox7" value="option1">
+                      <label for="customCheckbox7" class="custom-control-label">Tratamento Completo.</label><br />                      
+                    </div>
+                    <div class="custom-control custom-checkbox">                      
+                      <input class="custom-control-input" type="checkbox" id="customCheckbox8" value="option1">
+                      <label for="customCheckbox8" class="custom-control-label">Tratamento Incompleto.</label><br />                      
+                    </div>
+                    <div class="custom-control custom-checkbox">                      
+                      <input class="custom-control-input" type="checkbox" id="customCheckbox9" value="option1">
+                      <label for="customCheckbox9" class="custom-control-label">Não Tratou.</label>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="form-group">
-                <label for="inputDescription">Esquema Terapêutico</label>
-                <textarea id="inputDescription" class="form-control" rows="4"></textarea>
-              </div>
-              <div class="form-group">
-                <label for="inputStatus">Status</label>
-                <select id="inputStatus" class="form-control custom-select">
-                  <option selected disabled>Select one</option>
-                  <option>On Hold</option>
-                  <option>Canceled</option>
-                  <option>Success</option>
-                </select>
-              </div>
-              <div class="form-group">
-                <label for="inputClientCompany">Client Company</label>
-                <input type="text" id="inputClientCompany" class="form-control">
-              </div>
-              <div class="form-group">
-                <label for="inputProjectLeader">Project Leader</label>
-                <input type="text" id="inputProjectLeader" class="form-control">
+              <br />
+              <div class="row">
+                <div class="col-12">                  
+                  <input type="submit" value="Salvar" class="btn btn-success">
+                  <a href="#" class="btn btn-secondary">Cancelar</a>
+                </div>
               </div>
             </div>
             <!-- /.card-body -->
           </div>
     
        
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-12">
-          <a href="#" class="btn btn-secondary">Cancelar</a>
-          <input type="submit" value="Salvar" class="btn btn-success float-right">
         </div>
       </div>
     </section>
