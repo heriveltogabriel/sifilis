@@ -106,14 +106,14 @@
                 </a>
               </li>
 
-              <li class="nav-item">
+              <!--<li class="nav-item">
                 <a href="populacao.html" class="nav-link">
                   <i class="nav-icon far fa-image"></i>
                   <p>
                     Sífilis na População
                   </p>
                 </a>
-              </li>
+              </li>-->
               <!-- MENU -->
 
 
@@ -161,38 +161,59 @@
           <div class="form-group">
             <div class="row">
               <div class="col-md-6">
-                <label for="inputName">Unidade de Saúde (UBS)</label> <span style="color:red">*</span>
+                <label for="inputName">Município</label> <span style="color:red">*</span>                
+                <select id="inputName" class="form-control custom-select">
+                  <option selected>Selecione</option>
+                </select>
+              </div>              
+            </div><br />
+            <div class="row">
+              <div class="col-md-6">
+                <label for="inputName">Unidade Básica de Saúde</label>
                 <select id="inputName" class="form-control custom-select">
                   <option selected disabled>Selecione</option>
                 </select>
               </div>
-              <div class="col-md-3">
+              <div class="col-md-6">
+                <label for="inputName">Maternidae</label>
+                <select id="inputName" class="form-control custom-select">
+                  <option selected disabled>Selecione</option>
+                </select>
+              </div>
+            </div><br />            
+            <div class="row">              
+              <div class="col-md-4">
                 <label for="inputName">Número da Notificação</label>
                 <input type="text" id="inputName" class="form-control">
               </div>
-              <div class="col-md-3">
+              <div class="col-md-2">&nbsp;</div>
+              <div class="col-md-4">
                 <label for="inputName">Data da Notificação</label>
                 <input type="date" id="inputName" class="form-control">
               </div>
-
             </div><br />
             <div class="row">
               <div class="col-md-12">
-                <label for="inputName">Nome do Paciente</label> <span style="color:red">*</span>
+                <label for="inputName">Nome completo da gestante</label> <span style="color:red">*</span>
                 <input type="text" id="inputName" class="form-control">
               </div>
             </div><br />
-
             <div class="row">
-              <div class="col-md-6">
+              <div class="col-md-4">
+                <label for="inputName">CPF</label> <span style="color:red">*</span>
+                <input type="text" id="inputName" class="form-control cpf">
+              </div>       
+              <div class="col-md-2">&nbsp;</div>   
+              <div class="col-md-4">
+                <label for="inputName">CNS</label>
+                <input type="text" id="inputName" class="form-control cpf">
+              </div>       
+            </div><br />
+            <div class="row">
+              <div class="col-md-4">
                 <label for="inputName">Data de Nascimento</label>
                 <input type="date" id="inputName" class="form-control">
-              </div>
-
-              <div class="col-md-6">
-                <label for="inputName">Data da realização do teste</label>
-                <input type="date" id="inputName" class="form-control">
-              </div>
+              </div>              
             </div>
 
           </div>
@@ -222,120 +243,15 @@
                   <option selected disabled>Selecione</option>
                   <option>Primeiro</option>
                   <option>Segundo</option>
-                  <option>Terceiro</option>
-                  <option>Quarto</option>
+                  <option>Terceiro</option>                  
                 </select>
               </div>
-            </div><br />
-            <div class="row">
-              <h4>&nbsp;&nbsp;VDRL 1</h4>
-              <hr />
-              <div class="col-md-4">
-                <label for="inputName">Data</label>
-                <input type="date" id="inputName" class="form-control">
-              </div>
-              <div class="col-md-4">
-                <label for="inputName">Valor</label>
-                <input type="text" id="inputName" class="form-control">
-              </div>
-            </div><br />
-            <div class="row">
-              <h4>&nbsp;&nbsp;VDRL 2</h4>
-              <hr />
-              <div class="col-md-4">
-                <label for="inputName">Data</label>
-                <input type="date" id="inputName" class="form-control">
-              </div>
-              <div class="col-md-4">
-                <label for="inputName">Valor</label>
-                <input type="text" id="inputName" class="form-control">
-              </div>
-            </div><br />
-            <div class="row">
-              <h4>&nbsp;&nbsp;VDRL 3</h4>
-              <hr />
-              <div class="col-md-4">
-                <label for="inputName">Data</label>
-                <input type="date" id="inputName" class="form-control">
-              </div>
-              <div class="col-md-4">
-                <label for="inputName">Valor</label>
-                <input type="text" id="inputName" class="form-control">
-              </div>
-            </div><br />
-            <div class="row">
-              <h4>&nbsp;&nbsp;VDRL 4</h4>
-              <hr />
-              <div class="col-md-4">
-                <label for="inputName">Data</label>
-                <input type="date" id="inputName" class="form-control">
-              </div>
-              <div class="col-md-4">
-                <label for="inputName">Valor</label>
-                <input type="text" id="inputName" class="form-control">
-              </div>
-            </div><br />
-            <div class="row">
-              <h4>&nbsp;&nbsp;VDRL 5</h4>
-              <hr />
-              <div class="col-md-4">
-                <label for="inputName">Data</label>
-                <input type="date" id="inputName" class="form-control">
-              </div>
-              <div class="col-md-4">
-                <label for="inputName">Valor</label>
-                <input type="text" id="inputName" class="form-control">
-              </div>
-            </div><br />
-            <div class="row">
-              <h4>&nbsp;&nbsp;VDRL 6</h4>
-              <hr />
-              <div class="col-md-4">
-                <label for="inputName">Data</label>
-                <input type="date" id="inputName" class="form-control">
-              </div>
-              <div class="col-md-4">
-                <label for="inputName">Valor</label>
-                <input type="text" id="inputName" class="form-control">
-              </div>
-            </div><br />
-            <div class="row">
-              <h4>&nbsp;&nbsp;VDRL 7</h4>
-              <hr />
-              <div class="col-md-4">
-                <label for="inputName">Data</label>
-                <input type="date" id="inputName" class="form-control">
-              </div>
-              <div class="col-md-4">
-                <label for="inputName">Valor</label>
-                <input type="text" id="inputName" class="form-control">
-              </div>
-            </div><br />
-
+            </div><br />            
           </div>
-
-
           <div class="row">
             <div class="col-md-12">
               <label for="inputDescription">Observações</label>
               <textarea id="inputDescription" class="form-control" rows="4"></textarea>
-            </div>
-          </div><br />
-          <div class="row">
-            <div class="col-md-12">
-              <label for="inputName">Tratamento</label>
-              <div class="custom-control custom-checkbox">
-                <input class="custom-control-input" type="checkbox" id="customCheckbox7" value="option1">
-                <label for="customCheckbox7" class="custom-control-label">Tratamento Completo.</label><br />
-              </div>
-              <div class="custom-control custom-checkbox">
-                <input class="custom-control-input" type="checkbox" id="customCheckbox8" value="option1">
-                <label for="customCheckbox8" class="custom-control-label">Tratamento Incompleto.</label><br />
-              </div>
-              <div class="custom-control custom-checkbox">
-                <input class="custom-control-input" type="checkbox" id="customCheckbox9" value="option1">
-                <label for="customCheckbox9" class="custom-control-label">Não Tratou.</label>
-              </div>
             </div>
           </div>
         </div>
@@ -344,46 +260,7 @@
 </section>
 <!-- FIM  Trimestre que a gestante -->
 
-<!-- ESTAGIO CLINICO -->
-<section class="content">
-  <div class="row">
-    <div class="col-md-12">
-      <div class="card card-secondary">
-        <div class="card-header">
-          <h3 class="card-title">Estágio Clínico</h3>
 
-          <div class="card-tools">
-            <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
-              <i class="fas fa-minus"></i>
-            </button>
-          </div>
-        </div>
-        <div class="card-body">
-          <div class="form-group">
-            <div class="row">
-              <div class="col-md-12">
-                <div class="custom-control custom-checkbox">
-                  <input class="custom-control-input" type="checkbox" id="customCheckbox1" value="option1">
-                  <label for="customCheckbox1" class="custom-control-label">Sífilis Recente(com menos de 2 anos de
-                    evolução; sífilis primária, secundária e latente recente.)</label><br />
-                </div>
-                <div class="custom-control custom-checkbox">
-                  <input class="custom-control-input" type="checkbox" id="customCheckbox2" value="option1">
-                  <label for="customCheckbox2" class="custom-control-label">Sífilis Tardia(com mais de 2 anos de
-                    evolução; sífilis latente tardia ou latente com duração ignorada e síflis
-                    terciária.)</label><br />
-                </div>
-                <div class="custom-control custom-checkbox">
-                  <input class="custom-control-input" type="checkbox" id="customCheckbox3" value="option1">
-                  <label for="customCheckbox3" class="custom-control-label">Neurosífilis</label>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-</section>
-<!-- FIM ESTAGIO CLINICO -->
     <!-- ESQUEMA TERAPEUTICO -->
     <section class="content">
       <div class="row">
@@ -424,44 +301,7 @@
                     <label for="inputName">Data da 3ª Dose</label>
                     <input type="date" id="inputName" class="form-control">
                   </div>
-                </div><br />
-
-                <div class="row">
-                  <h4>&nbsp;&nbsp;VDRL 1</h4>
-                  <hr />
-                  <div class="col-md-4">
-                    <label for="inputName">Data</label>
-                    <input type="date" id="inputName" class="form-control">
-                  </div>
-                  <div class="col-md-4">
-                    <label for="inputName">Valor</label>
-                    <input type="text" id="inputName" class="form-control">
-                  </div>
-                </div><br />
-                <div class="row">
-                  <h4>&nbsp;&nbsp;VDRL 2</h4>
-                  <hr />
-                  <div class="col-md-4">
-                    <label for="inputName">Data</label>
-                    <input type="date" id="inputName" class="form-control">
-                  </div>
-                  <div class="col-md-4">
-                    <label for="inputName">Valor</label>
-                    <input type="text" id="inputName" class="form-control">
-                  </div>
-                </div><br />
-                <div class="row">
-                  <h4>&nbsp;&nbsp;VDRL 3</h4>
-                  <hr />
-                  <div class="col-md-4">
-                    <label for="inputName">Data</label>
-                    <input type="date" id="inputName" class="form-control">
-                  </div>
-                  <div class="col-md-4">
-                    <label for="inputName">Valor</label>
-                    <input type="text" id="inputName" class="form-control">
-                  </div>
-                </div><br />
+                </div><br />                
 
               </div>
             </div>
@@ -506,6 +346,31 @@
   <script src="../../dist/js/adminlte.min.js"></script>
   <!-- AdminLTE for demo purposes -->
   <script src="../../dist/js/demo.js"></script>
+
+  <script src="js/jquery-1.10.2.min.js"></script>
+<script src="js/jquery.mask.min.js"></script>
+
+<script type="text/javascript">
+      (function ($) {
+          $(function () {
+              $('.data').mask('00/00/0000', { reverse: false });
+              $('.dinheiro').mask('000.000.000.000,00', { reverse: true, maxlength: 18 });
+              $('.cpf').mask('000.000.000-00', { reverse: false });
+              $('.cnpj').mask('00.000.000/0000-00', { reverse: false });
+              $('.cep').mask('00000-000', { reverse: false });
+              $('.numero').mask('000', { reverse: true});
+              $('.rg').mask('0000000', { reverse: false, maxlength: 7 });
+              $('.telefone').mask('(00) 00000-0000', { reverse: false });
+              $('.telefone2').mask('(00) 0000-0000', { reverse: false });
+              $('.agencia').mask('0000-0', { reverse: false });
+              $('.conta').mask('00000-0', { reverse: false });
+              $('.numero_decimal').mask('00,0', { reverse: true, maxlength: 4 });
+              $('.altura').mask('0,00', { reverse: true, maxlength: 4 });
+              $('.altura2').mask('000', { reverse: true, maxlength: 3 });
+              $('.peso').mask('000', { reverse: true, maxlength: 3 });
+          });
+  })(jQuery);
+</script>
 </body>
 
 </html>
