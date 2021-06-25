@@ -96,21 +96,12 @@
                   </p>
                 </a>
               </li>
-   
+
               <li class="nav-item">
                 <a href="congenita.html" class="nav-link">
                   <i class="nav-icon far fa-image"></i>
                   <p>
-                    Sífilis Congênita - Seguimento
-                  </p> 
-                </a>
-              </li>
-
-              <li class="nav-item">
-                <a href="congenita_seguimento.html" class="nav-link">
-                  <i class="nav-icon far fa-image"></i>
-                  <p>
-                    Sífilis Congênita - Seguimento
+                    Sífilis Congênita
                   </p>
                 </a>
               </li>
@@ -176,35 +167,27 @@
           </div>
         </div>
         <div class="card-body">
-          <div class="form-group">
+          <div class="form-group">            
             <div class="row">
               <div class="col-md-6">
                 <label for="inputName">Município</label> <span style="color:red">*</span>                
                 <select id="inputName" class="form-control custom-select">
                   <option selected>Selecione</option>
                 </select>
-              </div>              
-            </div><br />
-            <div class="row">
+              </div>          
               <div class="col-md-6">
                 <label for="inputName">Unidade Básica de Saúde</label>
                 <select id="inputName" class="form-control custom-select">
                   <option selected>Selecione</option>
                 </select>
-              </div>
-              <div class="col-md-6">
-                <label for="inputName">Maternidade</label>
-                <select id="inputName" class="form-control custom-select">
-                  <option selected>Selecione</option>
-                </select>
-              </div>
+              </div>       
             </div><br />
             <div class="row">
               <div class="col-md-12">
                 <label for="inputName">Nome completo da gestante</label> <span style="color:red">*</span>
                 <input type="text" id="inputName" class="form-control">
               </div>
-            </div><br />   
+            </div><br /> 
             <div class="row">
               <div class="col-md-4">
                 <label for="inputName">CPF</label> <span style="color:red">*</span>
@@ -215,19 +198,10 @@
                 <label for="inputName">Data de Nascimento</label>
                 <input type="date" id="inputName" class="form-control">
               </div>               
-            </div><br />         
-            <div class="row">
-              <div class="col-md-4">
-                <label for="inputName">CNS</label>
-                <input type="text" id="inputName" class="form-control cpf">
-              </div>       
-            </div><br />                                              
+            </div><br /> 
           </div>
   </section>
-<!--FIM Sífilis em Gestantes-->
-     
-
-<!-- Trimestre que a gestante -->
+<!--FIM Sífilis em Gestantes-->     
 <section class="content">
   <div class="row">
     <div class="col-md-12">
@@ -253,7 +227,7 @@
                 <label for="inputName">Número da Notificação</label>
                 <input type="text" id="inputName" class="form-control">
               </div>                            
-            </div><br />    
+            </div><br />
             <div class="row">
               <div class="col-md-4">
                 <label for="inputName">Trimestre que a gestante foi notificada</label>
@@ -263,45 +237,63 @@
                   <option>2º trimeste</option>
                   <option>3º trimeste</option>                  
                 </select>
-              </div>
-              <div class="col-md-2"></div>
+              </div>              
+            </div><br />
+            <div class="row">
               <div class="col-md-4">
-                <label for="inputDescription">Realizou teste rápido?</label>
+                <label for="inputName">Realizou aplicação da 1ª dose de penicilina?</label>
                 <select id="inputName" class="form-control custom-select" onchange="fn_teste(this.value);">
                   <option selected>Selecione</option>
                   <option value="1">SIM</option>
                   <option value="2">NÃO</option>                
                 </select>
               </div>
-            </div><br />   
-            <div class="row" id="dv1" style="display: none;">
+              <div class="col-md-2"></div>
               <div class="col-md-4">
-                <label for="inputDescription">Data da realização do teste</label>
+                <label for="inputDescription">Data da 1ª dose</label>
                 <input type="date" id="inputName" class="form-control">
               </div>
             </div><br />
             <div class="row">
-              <div class="col-md-4">
-                <label for="inputDescription">Qual o resultado?</label>
+              <div class="col-md-6">
+                <label for="inputName">Qual o resultado VDRL/RPR no primeiro atendimento na UBS</label>
                 <select id="inputName" class="form-control custom-select">
-                  <option selected>Selecione</option>
-                  <option>POSITIVO</option>
-                  <option>NEGATIVO</option>                
+                  <option selected>NÃO REAGENTE</option>
+                  <option>1:1</option>
+                  <option>1:2</option>
+                  <option>1:4</option>
+                  <option>1:8</option>
+                  <option>1:16</option>
+                  <option>1:32</option>
+                  <option>1:64</option>
+                  <option>1:128</option>
+                  <option>1:256</option>
+                  <option>1:512</option>
+                  <option>1:1024</option>
+                  <option>1:2048</option>
+                  <option>1:4096</option>
+                  <option>1:8192</option>                
                 </select>
-              </div>
-              <div class="col-md-2"></div>
+              </div>              
+            </div><br />
+            <div class="row">
               <div class="col-md-4">
-                <label for="inputDescription">Realizou VDRL/RPR</label>
-                <select id="inputName" class="form-control custom-select" onchange="fn_vdrl(this.value);">
-                  <option selected>Selecione</option>
+                <label for="inputName">Realizou 2º VDRL/RPR</label>
+                <select id="inputName" class="form-control custom-select" onchange="fn_2VDRL(this.value);">
+                  <option selected>SELECIONE</option>
                   <option value="1">SIM</option>
-                  <option value="2">NÃO</option>                
+                  <option value="2">NÃO</option>
                 </select>
+              </div>     
+              <div class="col-md-2"></div>         
+              <div class="col-md-4" id="dv1" style="display: none;">
+                <label for="inputName">Data</label>
+                <input type="date" id="inputName" class="form-control">
               </div>
-            </div><br />            
-            <div class="row" id="dv2" style="display: none;">
-              <div class="col-md-4">
-                <label for="inputDescription">Qual o resultado VDRL/RPR?</label>
+            </div><br />
+            <div class="row">
+              <div class="col-md-6">
+                <label for="inputName">2º Resultado VDRL/RPR</label>
                 <select id="inputName" class="form-control custom-select">
                   <option selected>NÃO REAGENTE</option>
                   <option>1:1</option>
@@ -323,43 +315,161 @@
             </div><br />
             <div class="row">
               <div class="col-md-4">
-                <label for="inputDescription">Esquema Terapêutico</label>
-                <select id="inputName" class="form-control custom-select" onchange="fn_div1(this.value);">
-                  <option selected>SELECIONE</option>
-                  <option>Penicilina G benzatina 2,4 milhões UI, IM dose única</option>
-                  <option>Penicilina G benzatina 2,4 milhões UI, MI, semanal por 3 semanas</option>
-                  <option>Outro</option>                  
+                <label for="inputName">Realizou 3º VDRL/RPR?</label>
+                <select id="inputName" class="form-control custom-select" onchange="fn_3VDRL(this.value);">
+                  <option selected>Selecione</option>
+                  <option value="1">SIM</option>
+                  <option value="2">NÃO</option>                
                 </select>
               </div>
-            </div><br />
-            <div class="row" id="dv3" style="display: none;">
-              <div class="col-md-12">
-                <label for="inputName">Descrever</label> <span style="color:red">*</span>
-                <textarea id="inputDescription" class="form-control" rows="4"></textarea>
+              <div class="col-md-2"></div>         
+              <div class="col-md-4" id="dv2" style="display: none;">
+                <label for="inputName">Data</label>
+                <input type="date" id="inputName" class="form-control">
               </div>
             </div><br />
             <div class="row">
-              <div class="col-md-5">
-                <label for="inputName">Realizou aplicação da 1ª dose de penicilina?</label> <span style="color:red">*</span>
-                <select id="inputName" class="form-control custom-select" onchange="fn_penicilina(this.value);">
-                  <option selected>SELECIONE</option>
-                  <option value="1">SIM</option>
-                  <option value="2">NÃO</option>
+              <div class="col-md-6">
+                <label for="inputName">3º Resultado VDRL/RPR</label>
+                <select id="inputName" class="form-control custom-select">
+                  <option selected>NÃO REAGENTE</option>
+                  <option>1:1</option>
+                  <option>1:2</option>
+                  <option>1:4</option>
+                  <option>1:8</option>
+                  <option>1:16</option>
+                  <option>1:32</option>
+                  <option>1:64</option>
+                  <option>1:128</option>
+                  <option>1:256</option>
+                  <option>1:512</option>
+                  <option>1:1024</option>
+                  <option>1:2048</option>
+                  <option>1:4096</option>
+                  <option>1:8192</option>                
                 </select>
               </div>
             </div><br />
-            <div class="row" id="dv4" style="display: none;">
+            <div class="row">
               <div class="col-md-4">
-                <label for="inputName">Data da 1ª Dose</label> <span style="color:red">*</span>
-                <input type="date" id="inputName" class="form-control"> 
+                <label for="inputName">Realizou 4º VDRL/RPR?</label>
+                <select id="inputName" class="form-control custom-select" onchange="fn_4VDRL(this.value);">
+                  <option selected>Selecione</option>
+                  <option value="1">SIM</option>
+                  <option value="2">NÃO</option>                
+                </select>
               </div>
-              <div class="col-md-4">
-                <label for="inputName">Agendar data da 2ª Dose</label> <span style="color:red">*</span>
+              <div class="col-md-2"></div>         
+              <div class="col-md-4" id="dv3" style="display: none;">
+                <label for="inputName">Data</label>
                 <input type="date" id="inputName" class="form-control">
               </div>
+            </div><br />
+            <div class="row">
+              <div class="col-md-6">
+                <label for="inputName">4º Resultado VDRL/RPR</label>
+                <select id="inputName" class="form-control custom-select">
+                  <option selected>NÃO REAGENTE</option>
+                  <option>1:1</option>
+                  <option>1:2</option>
+                  <option>1:4</option>
+                  <option>1:8</option>
+                  <option>1:16</option>
+                  <option>1:32</option>
+                  <option>1:64</option>
+                  <option>1:128</option>
+                  <option>1:256</option>
+                  <option>1:512</option>
+                  <option>1:1024</option>
+                  <option>1:2048</option>
+                  <option>1:4096</option>
+                  <option>1:8192</option>                
+                </select>
+              </div>
+            </div><br />
+            <div class="row">
               <div class="col-md-4">
-                <label for="inputName">Agendar data da 3ª Dose</label> <span style="color:red">*</span>
+                <label for="inputName">Realizou 5º VDRL/RPR?</label>
+                <select id="inputName" class="form-control custom-select" onchange="fn_5VDRL(this.value);">
+                  <option selected>Selecione</option>
+                  <option value="1">SIM</option>
+                  <option value="2">NÃO</option>                
+                </select>
+              </div>
+              <div class="col-md-2"></div>         
+              <div class="col-md-4" id="dv4" style="display: none;">
+                <label for="inputName">Data</label>
                 <input type="date" id="inputName" class="form-control">
+              </div>
+            </div><br />
+            <div class="row">
+              <div class="col-md-6">
+                <label for="inputName">5º Resultado VDRL/RPR</label>
+                <select id="inputName" class="form-control custom-select">
+                  <option selected>NÃO REAGENTE</option>
+                  <option>1:1</option>
+                  <option>1:2</option>
+                  <option>1:4</option>
+                  <option>1:8</option>
+                  <option>1:16</option>
+                  <option>1:32</option>
+                  <option>1:64</option>
+                  <option>1:128</option>
+                  <option>1:256</option>
+                  <option>1:512</option>
+                  <option>1:1024</option>
+                  <option>1:2048</option>
+                  <option>1:4096</option>
+                  <option>1:8192</option>                
+                </select>
+              </div>
+            </div><br />
+            <div class="row">
+              <div class="col-md-4">
+                <label for="inputName">Realizou 6º VDRL/RPR?</label>
+                <select id="inputName" class="form-control custom-select" onchange="fn_6VDRL(this.value);">
+                  <option selected>Selecione</option>
+                  <option value="1">SIM</option>
+                  <option value="2">NÃO</option>                
+                </select>
+              </div>
+              <div class="col-md-2"></div>         
+              <div class="col-md-4" id="dv5" style="display: none;">
+                <label for="inputName">Data</label>
+                <input type="date" id="inputName" class="form-control">
+              </div>
+            </div><br />
+            <div class="row">
+              <div class="col-md-6">
+                <label for="inputName">6º Resultado VDRL/RPR</label>
+                <select id="inputName" class="form-control custom-select">
+                  <option selected>NÃO REAGENTE</option>
+                  <option>1:1</option>
+                  <option>1:2</option>
+                  <option>1:4</option>
+                  <option>1:8</option>
+                  <option>1:16</option>
+                  <option>1:32</option>
+                  <option>1:64</option>
+                  <option>1:128</option>
+                  <option>1:256</option>
+                  <option>1:512</option>
+                  <option>1:1024</option>
+                  <option>1:2048</option>
+                  <option>1:4096</option>
+                  <option>1:8192</option>                
+                </select>
+              </div>
+            </div><br />
+            <div class="row">
+              <div class="col-md-4">
+                <label for="inputDescription">Tratamento concluído?</label>
+                <select id="inputName" class="form-control custom-select">
+                  <option selected>Selecione</option>
+                  <option>SIM</option>
+                  <option>NÃO</option>
+                  <option>EM ANDAMENTO</option>
+                </select>
               </div>
             </div><br />
             <div class="row">
@@ -368,18 +478,18 @@
                 <textarea id="inputDescription" class="form-control" rows="4"></textarea>
               </div>
             </div><br />
-          </div> 
+          </div>
           <div class="row">
             <div class="col-12">                  
               <input type="submit" value="Salvar" class="btn btn-success">
               <a href="#" class="btn btn-secondary">Cancelar</a>
             </div>
-          </div>         
+          </div>   
         </div>
       </div>
     </div>
+  </div>
 </section>
-<!-- FIM  Trimestre que a gestante --> 
 </div>
 
 <br />
@@ -414,35 +524,43 @@
 <script src="js/jquery.mask.min.js"></script>
 
 <script type="text/javascript">
-  function fn_teste(valor) {
-    if (valor == 1) {
-      $('#dv1').css('display','block');         
-    } else {
-      $('#dv1').css('display','none');           
+  function fn_2VDRL(valor) {
+    if(valor == 1) {      
+      $('#dv1').css('display','block');
+    } else {      
+      $('#dv1').css('display','none');
     }
   }
 
-  function fn_vdrl(valor) {
-    if (valor == 1) {
-      $('#dv2').css('display','block');         
-    } else {
-      $('#dv2').css('display','none');           
+  function fn_3VDRL(valor) {
+    if(valor == 1) {      
+      $('#dv2').css('display','block');
+    } else {      
+      $('#dv2').css('display','none');
     }
   }
 
-  function fn_div1(valor) {
-    if(valor == 'Outro') {      
+  function fn_4VDRL(valor) {
+    if(valor == 1) {      
       $('#dv3').css('display','block');
     } else {      
       $('#dv3').css('display','none');
     }
   }
 
-  function fn_penicilina(valor) {
+  function fn_5VDRL(valor) {
     if(valor == 1) {      
       $('#dv4').css('display','block');
     } else {      
       $('#dv4').css('display','none');
+    }
+  }
+
+  function fn_6VDRL(valor) {
+    if(valor == 1) {      
+      $('#dv5').css('display','block');
+    } else {      
+      $('#dv5').css('display','none');
     }
   }
 
