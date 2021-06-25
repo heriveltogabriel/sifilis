@@ -185,156 +185,180 @@
                   </div>
                 </div><br />
                 <div class="row">
-                  <div class="col-md-6">
-                    <label for="inputName">Documento de identificação do RN</label>
-                    <input type="text" id="inputName" class="form-control">
-                  </div>
-                  <div class="col-md-6">
-                    <label for="inputName">Número de notificação</label>
-                    <input type="text" id="inputName" class="form-control">
-                  </div>                  
-                </div><br />
-                <div class="row">
-                  <div class="col-md-4">
-                    <label for="inputName">Data da Notificação</label>
-                    <input type="date" id="inputName" class="form-control"> 
-                  </div>
-                  <div class="col-md-2">&nbsp;</div>
                   <div class="col-md-4">
                     <label for="inputName">Data de Nascimento</label>
                     <input type="date" id="inputName" class="form-control">
                   </div>                                 
-                </div><br />    
-                <div class="row">
-                  <div class="col-md-4">
-                    <label for="inputName">Data do último VDRL/RPR realizado pela gestante antes do parto</label>
-                    <input type="date" id="inputName" class="form-control"> 
-                  </div>
-                  <div class="col-md-2">&nbsp;</div>
-                  <div class="col-md-4">
-                    <label for="inputName">Resultado VDLR/RPR gestante antes do parto</label>
-                    <select id="inputName" class="form-control custom-select"> <span style="color:red">*</span>
-                      <option selected>Não reagente</option>
-                      <option>1:1</option>
-                      <option>1:2</option>
-                      <option>1:4</option>
-                      <option>1:8</option>
-                      <option>1:16</option>
-                      <option>1:32</option>
-                      <option>1:64</option>
-                      <option>1:128</option>
-                      <option>1:256</option>
-                      <option>1:512</option>
-                      <option>1:1024</option>
-                      <option>1:2048</option>
-                      <option>1:4096</option>
-                      <option>1:8192</option>
-                    </select>
-                  </div>                                 
-                </div><br /> 
-                <div class="row">
-                  <div class="col-md-4">
-                    <label for="inputName">Data da realização do VDRL/RPR MÃE na maternidade</label>
-                    <input type="date" id="inputName" class="form-control">
-                  </div>
-                  <div class="col-md-2">&nbsp;</div>
-                  <div class="col-md-4">
-                    <label for="inputName">Resultado VDLR/RPR MÃE na maternidade</label>
-                    <select id="inputName" class="form-control custom-select">
-                      <option selected>Não reagente</option>
-                      <option>1:1</option>
-                      <option>1:2</option>
-                      <option>1:4</option>
-                      <option>1:8</option>
-                      <option>1:16</option>
-                      <option>1:32</option>
-                      <option>1:64</option>
-                      <option>1:128</option>
-                      <option>1:256</option>
-                      <option>1:512</option>
-                      <option>1:1024</option>
-                      <option>1:2048</option>
-                      <option>1:4096</option>
-                      <option>1:8192</option>
-                    </select>
-                  </div>                                 
-                </div><br />     
-                <div class="row">
-                  <div class="col-md-4">
-                    <label for="inputName">Data da realização do VDRL/RPR RECÉM-NASCIDO</label>
-                    <input type="date" id="inputName" class="form-control">
-                  </div>
-                  <div class="col-md-2">&nbsp;</div>
-                  <div class="col-md-4">
-                    <label for="inputName">Resultado VDLR/RPR RECÉM-NASCIDO</label>
-                    <select id="inputName" class="form-control custom-select">
-                      <option selected>Não reagente</option>
-                      <option>1:1</option>
-                      <option>1:2</option>
-                      <option>1:4</option>
-                      <option>1:8</option>
-                      <option>1:16</option>
-                      <option>1:32</option>
-                      <option>1:64</option>
-                      <option>1:128</option>
-                      <option>1:256</option>
-                      <option>1:512</option>
-                      <option>1:1024</option>
-                      <option>1:2048</option>
-                      <option>1:4096</option>
-                      <option>1:8192</option>
-                    </select>
-                  </div>                                 
-                </div><br />  
-                <div class="row">
-                  <div class="col-md-4">            
-                    <label for="inputName">Tipo</label> <span style="color:red">*</span>        
-                    <select id="inputName" class="form-control custom-select" onchange="fn_tipo(this.value);"> <span style="color:red">*</span>
-                      <option value="1">Criança exposta</option>
-                      <option value="2" selected>Sífilis congênita</option>
-                    </select>
-                  </div>
-                </div><br />        
-                <div class="row" id="dv2">
-                  <div class="col-md-4">
-                    <label for="inputName">Esquema Terapêutico</label>
-                    <select id="inputName" class="form-control custom-select" onchange="fn_div1(this.value);">
-                      <option selected>Selecione</option>
-                      <option>Benzilpenicilina procaína 50.000 UI/kg, IM, uma vez ao dia, por 10 dias</option>
-                      <option>Benzilpenicilina potássica (cristalina) 50.000 UI/kg, IV, de 12/12h (crianças com menos de 1 semana de vida) e de 8/8h (crianças com mais de 1 semana de vida), por 10 dias</option>
-                      <option>Benzilpenicilina benzatina 50.000 UI/kg,IM, dose única</option>
-                      <option>Outro</option>                      
-                    </select>
-                  </div>
+                  <div class="col-md-6">
+                    <label for="inputName">Documento de identificação do RN</label>
+                    <input type="text" id="inputName" class="form-control">
+                  </div>                  
                 </div><br />
-                <div class="row" id="dv1" style="display: none;">
-                  <div class="col-md-12">
-                    <label for="inputName">Descrever</label> <span style="color:red">*</span>
-                    <textarea id="inputDescription" class="form-control" rows="4"></textarea>
+              </section>
+                <section class="content">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="card card-secondary">
+                        <div class="card-header">
+                          <h3 class="card-title">Dados do atendimento</h3>
+                
+                          <div class="card-tools">            
+                            <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
+                              <i class="fas fa-minus"></i>
+                            </button>
+                          </div>
+                        </div>
+                        <div class="card-body">
+                          <div class="form-group">
+                            <div class="row">
+                              <div class="col-md-4">
+                                <label for="inputName">Data da Notificação</label>
+                                <input type="date" id="inputName" class="form-control"> 
+                              </div>
+                              <div class="col-md-2">&nbsp;</div>
+                              <div class="col-md-6">
+                                <label for="inputName">Número de notificação</label>
+                                <input type="text" id="inputName" class="form-control">
+                              </div>                   
+                            </div><br />    
+                            <div class="row">
+                              <div class="col-md-4">
+                                <label for="inputName">Data do último VDRL/RPR realizado pela gestante antes do parto</label>
+                                <input type="date" id="inputName" class="form-control"> 
+                              </div>
+                              <div class="col-md-2">&nbsp;</div>
+                              <div class="col-md-4">
+                                <label for="inputName">Resultado VDLR/RPR gestante antes do parto</label>
+                                <select id="inputName" class="form-control custom-select"> <span style="color:red">*</span>
+                                  <option selected>Não reagente</option>
+                                  <option>1:1</option>
+                                  <option>1:2</option>
+                                  <option>1:4</option>
+                                  <option>1:8</option>
+                                  <option>1:16</option>
+                                  <option>1:32</option>
+                                  <option>1:64</option>
+                                  <option>1:128</option>
+                                  <option>1:256</option>
+                                  <option>1:512</option>
+                                  <option>1:1024</option>
+                                  <option>1:2048</option>
+                                  <option>1:4096</option>
+                                  <option>1:8192</option>
+                                </select>
+                              </div>                                 
+                            </div><br /> 
+                            <div class="row">
+                              <div class="col-md-4">
+                                <label for="inputName">Data da realização do VDRL/RPR MÃE na maternidade</label>
+                                <input type="date" id="inputName" class="form-control">
+                              </div>
+                              <div class="col-md-2">&nbsp;</div>
+                              <div class="col-md-4">
+                                <label for="inputName">Resultado VDLR/RPR MÃE na maternidade</label>
+                                <select id="inputName" class="form-control custom-select">
+                                  <option selected>Não reagente</option>
+                                  <option>1:1</option>
+                                  <option>1:2</option>
+                                  <option>1:4</option>
+                                  <option>1:8</option>
+                                  <option>1:16</option>
+                                  <option>1:32</option>
+                                  <option>1:64</option>
+                                  <option>1:128</option>
+                                  <option>1:256</option>
+                                  <option>1:512</option>
+                                  <option>1:1024</option>
+                                  <option>1:2048</option>
+                                  <option>1:4096</option>
+                                  <option>1:8192</option>
+                                </select>
+                              </div>                                 
+                            </div><br />     
+                            <div class="row">
+                              <div class="col-md-4">
+                                <label for="inputName">Data da realização do VDRL/RPR RECÉM-NASCIDO</label>
+                                <input type="date" id="inputName" class="form-control">
+                              </div>
+                              <div class="col-md-2">&nbsp;</div>
+                              <div class="col-md-4">
+                                <label for="inputName">Resultado VDLR/RPR RECÉM-NASCIDO</label>
+                                <select id="inputName" class="form-control custom-select">
+                                  <option selected>Não reagente</option>
+                                  <option>1:1</option>
+                                  <option>1:2</option>
+                                  <option>1:4</option>
+                                  <option>1:8</option>
+                                  <option>1:16</option>
+                                  <option>1:32</option>
+                                  <option>1:64</option>
+                                  <option>1:128</option>
+                                  <option>1:256</option>
+                                  <option>1:512</option>
+                                  <option>1:1024</option>
+                                  <option>1:2048</option>
+                                  <option>1:4096</option>
+                                  <option>1:8192</option>
+                                </select>
+                              </div>                                 
+                            </div><br />  
+                            <div class="row">
+                              <div class="col-md-4">            
+                                <label for="inputName">Tipo</label> <span style="color:red">*</span>        
+                                <select id="inputName" class="form-control custom-select" onchange="fn_tipo(this.value);"> <span style="color:red">*</span>
+                                  <option value="1">Criança exposta</option>
+                                  <option value="2" selected>Sífilis congênita</option>
+                                </select>
+                              </div>
+                            </div><br />        
+                            <div class="row" id="dv2">
+                              <div class="col-md-4">
+                                <label for="inputName">Esquema Terapêutico</label>
+                                <select id="inputName" class="form-control custom-select" onchange="fn_div1(this.value);">
+                                  <option selected>Selecione</option>
+                                  <option>Benzilpenicilina procaína 50.000 UI/kg, IM, uma vez ao dia, por 10 dias</option>
+                                  <option>Benzilpenicilina potássica (cristalina) 50.000 UI/kg, IV, de 12/12h (crianças com menos de 1 semana de vida) e de 8/8h (crianças com mais de 1 semana de vida), por 10 dias</option>
+                                  <option>Benzilpenicilina benzatina 50.000 UI/kg,IM, dose única</option>
+                                  <option>Outro</option>                      
+                                </select>
+                              </div>
+                            </div><br />
+                            <div class="row" id="dv1" style="display: none;">
+                              <div class="col-md-12">
+                                <label for="inputName">Descrever</label> <span style="color:red">*</span>
+                                <textarea id="inputDescription" class="form-control" rows="4"></textarea>
+                              </div>
+                            </div><br />
+                            <div class="row" id="dv3">                  
+                              <div class="col-md-4">
+                                <label for="inputName">Data da 1ª Dose esquema terapêutico</label>
+                                <input type="date" id="inputName" class="form-control"> 
+                              </div>
+                              <div class="col-md-2">&nbsp;</div>
+                              <div class="col-md-4">
+                                <label for="inputName">Tratamento completo</label>
+                                <select id="inputName" class="form-control custom-select" onchange="fn_div1(this.value);">
+                                  <option selected>Selecione</option>
+                                  <option>SIM</option>
+                                  <option>NÃO</option>
+                                  <option>EM ANDAMENTO</option>                      
+                                </select>
+                              </div>                 
+                            </div><br />                
+                            <div class="row">
+                              <div class="col-md-12">
+                                <label for="inputDescription">Observações</label>
+                                <textarea id="inputDescription" class="form-control" rows="4"></textarea>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                </div><br />
-                <div class="row" id="dv3">                  
-                  <div class="col-md-4">
-                    <label for="inputName">Data da 1ª Dose esquema terapêutico</label>
-                    <input type="date" id="inputName" class="form-control"> 
-                  </div>
-                  <div class="col-md-2">&nbsp;</div>
-                  <div class="col-md-4">
-                    <label for="inputName">Tratamento completo</label>
-                    <select id="inputName" class="form-control custom-select" onchange="fn_div1(this.value);">
-                      <option selected>Selecione</option>
-                      <option>SIM</option>
-                      <option>NÃO</option>
-                      <option>EM ANDAMENTO</option>                      
-                    </select>
-                  </div>                 
-                </div><br />                
-                <div class="row">
-                  <div class="col-md-12">
-                    <label for="inputDescription">Observações</label>
-                    <textarea id="inputDescription" class="form-control" rows="4"></textarea>
-                  </div>
-                </div>
+                  
+                </section>
+                
               </div>
               <br />             
               
@@ -351,7 +375,7 @@
        
         </div>
       </div>      
-    </section>
+    
     <!-- /.content -->
   </div>
   <!-- /.content-wrapper -->
