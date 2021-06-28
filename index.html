@@ -377,10 +377,10 @@
             <div class="row">
               <div class="col-md-4">
                 <label for="inputDescription">Esquema Terapêutico</label>
-                <select id="inputName" class="form-control custom-select" onchange="fn_div1(this.value);">
-                  <option selected>SELECIONE</option>
-                  <option>Penicilina G benzatina 2,4 milhões UI, IM dose única</option>
-                  <option>Penicilina G benzatina 2,4 milhões UI, MI, semanal por 3 semanas</option>
+                <select id="inputNameEsquemaTerapeutico" class="form-control custom-select" onchange="fn_div1(this.value);">
+                  <option value="0" selected>SELECIONE</option>
+                  <option value="1">Penicilina G benzatina 2,4 milhões UI, IM dose única</option>
+                  <option value="2">Penicilina G benzatina 2,4 milhões UI, MI, semanal por 3 semanas</option>
                   <option>Outro</option>                  
                 </select>
               </div>
@@ -394,23 +394,23 @@
             <div class="row">
               <div class="col-md-5">
                 <label for="inputName">Realizou aplicação da 1ª dose de penicilina?</label> <span style="color:red">*</span>
-                <select id="inputName" class="form-control custom-select" onchange="fn_penicilina(this.value);">
-                  <option selected>SELECIONE</option>
+                <select id="inputNameDosePenicilia" class="form-control custom-select" onchange="fn_penicilina(this.value);">
+                  <option value="0" selected>SELECIONE</option>
                   <option value="1">SIM</option>
                   <option value="2">NÃO</option>
                 </select>
               </div>
             </div><br />
             <div class="row" id="dv4" style="display: none;">
-              <div class="col-md-4">
+              <div class="col-md-4" id="dv4_1">
                 <label for="inputName">Data da 1ª Dose</label> <span style="color:red">*</span>
                 <input type="date" id="inputName" class="form-control"> 
               </div><br />
-              <div class="col-md-4">
+              <div class="col-md-4" id="dv4_2">
                 <label for="inputName">Agendar data da 2ª Dose</label> <span style="color:red">*</span>
                 <input type="date" id="inputName" class="form-control">
               </div><br />
-              <div class="col-md-4">
+              <div class="col-md-4" id="dv4_3">
                 <label for="inputName">Agendar data da 3ª Dose</label> <span style="color:red">*</span>
                 <input type="date" id="inputName" class="form-control">
               </div>
@@ -484,6 +484,12 @@
   }
 
   function fn_div1(valor) {
+    $('#dv4').css('display','none');
+
+    if ($('#inputNameDosePenicilia').val() != 0) {
+      fn_penicilina($('#inputNameDosePenicilia').val());
+    }
+
     if(valor == 'Outro') {      
       $('#dv3').css('display','block');
     } else {      
@@ -492,8 +498,20 @@
   }
 
   function fn_penicilina(valor) {
-    if(valor == 1) {      
+    if(valor == 1) {           
       $('#dv4').css('display','block');
+
+      if ($('#inputNameEsquemaTerapeutico').val() == 1) {        
+        $('#dv4_1').css('display','block');
+        $('#dv4_2').css('display','none');
+        $('#dv4_3').css('display','none');
+      } else if ($('#inputNameEsquemaTerapeutico').val() == 2) {        
+        $('#dv4_1').css('display','block');
+        $('#dv4_2').css('display','block');
+        $('#dv4_3').css('display','block');
+      } else {
+        $('#dv4').css('display','none');
+      }
     } else {      
       $('#dv4').css('display','none');
     }
