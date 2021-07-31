@@ -1,542 +1,113 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Sífilis</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Moisés Almeida">
+	<title>SISCSC - Controle da sífilis congênita em municípios de Santa Catarina</title>
 
-  <!-- Google Font: Source Sans Pro -->
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="./plugins/fontawesome-free/css/all.min.css">
-  <!-- Theme style -->
-  <link rel="stylesheet" href="./css/adminlte.min.css">
+	<!-- favicon -->
+	<link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="img/favicon/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+	<link rel="manifest" href="img/favicon/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+
+    <!-- Bootstrap CSS 4.6.0 -->
+    <link href="bootstrap-4.6.0-dist/bootstrap-4.6.0-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<!-- Estilos do Layout -->
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<link href="css/login.css" rel="stylesheet" type="text/css">
+	
+	<style>
+		@font-face{
+			font-family: "Liberation";
+			src: url("font/LiberationSans-Regular.ttf") format("truetype");
+			font-weight: normal;
+			font-style: normal;
+		}
+		@font-face{
+			font-family: "Liberation_Bold";
+			src: url("font/LiberationSans-Bold.ttf") format("truetype");
+			font-weight: normal;
+			font-style: normal;
+		}
+	</style>
 </head>
-
-<body class="hold-transition sidebar-mini">
-  <!-- Site wrapper -->
-  <div class="wrapper">
-    <!-- Navbar -->
-    <nav class="main-header navbar navbar-expand navbar-white navbar-light">
-      <!-- Left navbar links -->
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
-        </li>
-        <li class="nav-item d-none d-sm-inline-block">
-          <img src="./img/logo.png" />
-        </li>
-      </ul>
-
-      <!-- Right navbar links -->
-      <ul class="navbar-nav ml-auto">
-        <!-- Navbar Search -->
-        <li class="nav-item">
-          <a class="nav-link" data-widget="navbar-search" href="#" role="button">
-            <i class="fas fa-search"></i>
-          </a>
-          <div class="navbar-search-block">
-            <form class="form-inline">
-              <div class="input-group input-group-sm">
-                <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
-                <div class="input-group-append">
-                  <button class="btn btn-navbar" type="submit">
-                    <i class="fas fa-search"></i>
-                  </button>
-                  <button class="btn btn-navbar" type="button" data-widget="navbar-search">
-                    <i class="fas fa-times"></i>
-                  </button>
-                </div>
-              </div>
-            </form>
-          </div>
-        </li>
-      </ul>
-    </nav>
-    <!-- /.navbar -->
-
-    <!-- Main Sidebar Container -->
-    <aside class="main-sidebar sidebar-dark-primary elevation-4">
-      <!-- Brand Logo -->
-      <a href="index.html" class="brand-link">
-        <img src="./img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
-          style="opacity: .8">
-        <span class="brand-text font-weight-light">Notificações de Sífilis</span>
-      </a>
-
-      <!-- Sidebar -->
-      <div class="sidebar">
-        <!-- Sidebar user (optional) -->
-        <div class="user-panel mt-3 pb-3 mb-3 d-flex">
-
-
-          <!-- Sidebar Menu -->
-          <nav class="mt-2">
-            <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-              <!-- Add icons to the links using the .nav-icon class
-               with font-awesome or any other icon font library -->
-              <!-- MENU -->
-
-              <li class="nav-item">
-                <a href="index.html" class="nav-link">
-                  <i class="nav-icon far fa-image"></i>
-                  <p>
-                    Gestantes
-                  </p>
-                </a>
-              </li>
-
-              <li class="nav-item">
-                <a href="gestantes_seguimento.html" class="nav-link">
-                  <i class="nav-icon far fa-image"></i>
-                  <p>
-                    Gestantes - Seguimento
-                  </p>
-                </a>
-              </li>
-   
-              <li class="nav-item">
-                <a href="congenita.html" class="nav-link">
-                  <i class="nav-icon far fa-image"></i>
-                  <p>
-                    Sífilis Congênita
-                  </p> 
-                </a>
-              </li>
-
-              <li class="nav-item">
-                <a href="congenita_seguimento.html" class="nav-link">
-                  <i class="nav-icon far fa-image"></i>
-                  <p>
-                    Sífilis Congênita - Seguimento
-                  </p>
-                </a>
-              </li>
-
-              <li class="nav-item">
-                <a href="parceiros.html" class="nav-link">
-                  <i class="nav-icon far fa-image"></i>
-                  <p>
-                    Sífilis em Parceiros
-                  </p>
-                </a>
-              </li>
-
-              <!--<li class="nav-item">
-                <a href="populacao.html" class="nav-link">
-                  <i class="nav-icon far fa-image"></i>
-                  <p>
-                    Sífilis na População
-                  </p>
-                </a>
-              </li>-->
-              <!-- MENU -->
-
-
-
-            </ul>
-          </nav>
-          <!-- /.sidebar-menu -->
-        </div>
-        <!-- /.sidebar -->
-    </aside>
-
-    <!-- Content Wrapper. Contains page content -->
-    <div class="content-wrapper">
-      <!-- Content Header (Page header) -->
-      <section class="content-header">
-        <div class="container-fluid">
-          <div class="row mb-2">
-            <div class="col-sm-6">
-              <h1>Cadastro</h1>
-            </div>
-            <div class="col-sm-6">
-              <ol class="breadcrumb float-sm-right">
-                <li class="breadcrumb-item"><a href="#">Home</a></li>
-              </ol>
-            </div>
-          </div>
-        </div><!-- /.container-fluid -->
-      </section>
-
- <!-- Sífilis em Gestantes-->
- <section class="content">
-  <div class="row">
-    <div class="col-md-12">
-      <div class="card card-secondary">
-        <div class="card-header">
-          <h3 class="card-title">Sífilis em Gestantes</h3>
-
-          <div class="card-tools">
-            <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
-              <i class="fas fa-minus"></i>
-            </button>
-          </div>
-        </div>
-        <div class="card-body">
-          <div class="form-group">
-            <div class="row">
-              <div class="col-md-6">
-                <label for="inputName">Município</label> <span style="color:red">*</span>                
-                <select id="inputName" class="form-control custom-select">
-                  <option selected>Selecione</option>
-                </select>
-              </div>              
-            </div><br />
-            <div class="row">
-              <div class="col-md-6">
-                <label for="inputName">Unidade Básica de Saúde</label>
-                <select id="inputName" class="form-control custom-select">
-                  <option selected>Selecione</option>
-                </select>
-              </div>
-              <div class="col-md-6">
-                <label for="inputName">Maternidade</label>
-                <select id="inputName" class="form-control custom-select">
-                  <option selected>Selecione</option>
-                </select>
-              </div>
-            </div><br />
-            <div class="row">
-              <div class="col-md-12">
-                <label for="inputName">Nome completo da gestante</label> <span style="color:red">*</span>
-                <input type="text" id="inputName" class="form-control">
-              </div>             
-            </div><br />   
-            <div class="row">
-              <div class="col-md-4">
-                <label for="inputName">CPF</label> <span style="color:red">*</span>
-                <input type="text" id="inputName" class="form-control cpf">
-              </div>    
-              <div class="col-md-2">
-                <label for="inputName">CADSUS</label><br />          
-                <input type="button" value="PESQUISAR" class="btn btn-primary">
-              </div>                 
-              <div class="col-md-4">
-                <label for="inputName">Data de Nascimento</label>
-                <input type="date" id="inputName" class="form-control">
-              </div>                           
-            </div><br />                     
-            <div class="row">
-              <div class="col-md-4">
-                <label for="inputName">CNS</label>
-                <input type="text" id="inputName" class="form-control">
-              </div>   
-              <div class="col-md-4">
-                <label for="inputName">E-mail</label>
-                <input type="text" id="inputName" class="form-control">
-              </div>                   
-              <div class="col-md-4">
-                <label for="inputName">Telefone</label>
-                <input type="text" id="inputName" class="form-control telefone">
-              </div>    
-            </div><br />                
-          </div>
-  </section>
-<!--FIM Sífilis em Gestantes-->
-
-<section class="content">
-  <div class="row">
-    <div class="col-md-12">
-      <div class="card card-secondary">
-        <div class="card-header">
-          <h3 class="card-title">Endereço</h3>
-
-          <div class="card-tools">            
-            <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
-              <i class="fas fa-minus"></i>
-            </button>
-        </div>
-      </div>
-      <div class="card-body">
-        <div class="form-group">
-          <div class="row">
-            <div class="col-md-4">
-              <label for="inputName">CEP</label>
-              <input type="text" id="inputName" class="form-control cep">
-            </div>                   
-            <div class="col-md-4">
-              <label for="inputName">Município</label>
-              <select id="inputName" class="form-control custom-select">
-                <option selected>Selecione</option>                             
-              </select>
-            </div>                  
-          </div><br />  
-          <div class="row">                            
-            <div class="col-md-8">
-              <label for="inputName">Endereço</label>
-              <input type="text" id="inputName" class="form-control">
-            </div>    
-            <div class="col-md-4">
-              <label for="inputName">Complemento</label>
-              <input type="text" id="inputName" class="form-control">
-            </div>   
-          </div><br />
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Trimestre que a gestante -->
-<section class="content">
-  <div class="row">
-    <div class="col-md-12">
-      <div class="card card-secondary">
-        <div class="card-header">
-          <h3 class="card-title">Dados do atendimento</h3>
-
-          <div class="card-tools">            
-            <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
-              <i class="fas fa-minus"></i>
-            </button>
-          </div>
-        </div>
-        <div class="card-body">
-          <div class="form-group">
-            <div class="row">       
-              <div class="col-md-4">
-                <label for="inputName">Data da Notificação</label>
-                <input type="date" id="inputName" class="form-control">
-              </div>
-              <div class="col-md-2">&nbsp;</div>          
-              <div class="col-md-4">
-                <label for="inputName">Número da Notificação</label>
-                <input type="text" id="inputName" class="form-control">
-              </div>                            
-            </div><br />    
-            <div class="row">
-              <div class="col-md-4">
-                <label for="inputName">Trimestre que a gestante foi notificada</label>
-                <select id="inputName" class="form-control custom-select">
-                  <option selected>Selecione</option>
-                  <option>1º trimeste</option>
-                  <option>2º trimeste</option>
-                  <option>3º trimeste</option>                  
-                </select>
-              </div>
-              <div class="col-md-2"></div>
-              <div class="col-md-4">
-                <label for="inputDescription">Realizou teste rápido?</label>
-                <select id="inputName" class="form-control custom-select" onchange="fn_teste(this.value);">
-                  <option selected>Selecione</option>
-                  <option value="1">SIM</option>
-                  <option value="2">NÃO</option>                
-                </select>
-              </div>
-            </div><br />   
-            <div class="row" id="dv1" style="display: none;">
-              <div class="col-md-4">
-                <label for="inputDescription">Data da realização do teste</label>
-                <input type="date" id="inputName" class="form-control">
-              </div>
-            </div><br />
-            <div class="row">
-              <div class="col-md-4">
-                <label for="inputDescription">Qual o resultado?</label>
-                <select id="inputName" class="form-control custom-select">
-                  <option selected>Selecione</option>
-                  <option>POSITIVO</option>
-                  <option>NEGATIVO</option>                
-                </select>
-              </div>
-              <div class="col-md-2"></div>
-              <div class="col-md-4">
-                <label for="inputDescription">Realizou VDRL/RPR</label>
-                <select id="inputName" class="form-control custom-select" onchange="fn_vdrl(this.value);">
-                  <option selected>Selecione</option>
-                  <option value="1">SIM</option>
-                  <option value="2">NÃO</option>                
-                </select>
-              </div>
-            </div><br />            
-            <div class="row" id="dv2" style="display: none;">
-              <div class="col-md-4">
-                <label for="inputDescription">Qual o resultado VDRL/RPR?</label>
-                <select id="inputName" class="form-control custom-select">
-                  <option selected>NÃO REAGENTE</option>
-                  <option>1:1</option>
-                  <option>1:2</option>
-                  <option>1:4</option>
-                  <option>1:8</option>
-                  <option>1:16</option>
-                  <option>1:32</option>
-                  <option>1:64</option>
-                  <option>1:128</option>
-                  <option>1:256</option>
-                  <option>1:512</option>
-                  <option>1:1024</option>
-                  <option>1:2048</option>
-                  <option>1:4096</option>
-                  <option>1:8192</option>                
-                </select>
-              </div>
-            </div><br />
-            <div class="row">
-              <div class="col-md-4">
-                <label for="inputDescription">Esquema Terapêutico</label>
-                <select id="inputNameEsquemaTerapeutico" class="form-control custom-select" onchange="fn_div1(this.value);">
-                  <option value="0" selected>SELECIONE</option>
-                  <option value="1">Penicilina G benzatina 2,4 milhões UI, IM dose única</option>
-                  <option value="2">Penicilina G benzatina 2,4 milhões UI, MI, semanal por 3 semanas</option>
-                  <option>Outro</option>                  
-                </select>
-              </div>
-            </div><br />
-            <div class="row" id="dv3" style="display: none;">
-              <div class="col-md-12">
-                <label for="inputName">Descrever</label> <span style="color:red">*</span>
-                <textarea id="inputDescription" class="form-control" rows="4"></textarea>
-              </div>
-            </div><br />
-            <div class="row">
-              <div class="col-md-5">
-                <label for="inputName">Realizou aplicação da 1ª dose de penicilina?</label> <span style="color:red">*</span>
-                <select id="inputNameDosePenicilia" class="form-control custom-select" onchange="fn_penicilina(this.value);">
-                  <option value="0" selected>SELECIONE</option>
-                  <option value="1">SIM</option>
-                  <option value="2">NÃO</option>
-                </select>
-              </div>
-            </div><br />
-            <div class="row" id="dv4" style="display: none;">
-              <div class="col-md-4" id="dv4_1">
-                <label for="inputName">Data da 1ª Dose</label> <span style="color:red">*</span>
-                <input type="date" id="inputName" class="form-control"> 
-              </div><br />
-              <div class="col-md-4" id="dv4_2">
-                <label for="inputName">Agendar data da 2ª Dose</label> <span style="color:red">*</span>
-                <input type="date" id="inputName" class="form-control">
-              </div><br />
-              <div class="col-md-4" id="dv4_3">
-                <label for="inputName">Agendar data da 3ª Dose</label> <span style="color:red">*</span>
-                <input type="date" id="inputName" class="form-control">
-              </div>
-            </div><br />
-            <div class="row">
-              <div class="col-md-12">
-                <label for="inputDescription">Observações</label>
-                <textarea id="inputDescription" class="form-control" rows="4"></textarea>
-              </div>
-            </div><br />
-          </div> 
-          <div class="row">
-            <div class="col-12">                  
-              <input type="submit" value="Salvar" class="btn btn-success">
-              <a href="#" class="btn btn-secondary">Cancelar</a>
-            </div>
-          </div>         
-        </div>
-      </div>
-    </div>
-</section>
-<!-- FIM  Trimestre que a gestante --> 
-</div>
-
-<br />
-
-
-
-  <footer class="main-footer">
-    <div class="float-right d-none d-sm-block">
-      <b>Version</b> 1.0.0
-    </div>
-    <strong>Copyright &copy; 2021 <a href="http://bsf-tic.com.br">BSF-TIC</a>.</strong> All rights reserved.
-  </footer>
-
-  <!-- Control Sidebar -->
-  <aside class="control-sidebar control-sidebar-dark">
-    <!-- Control sidebar content goes here -->
-  </aside>
-  <!-- /.control-sidebar -->
-  </div>
-  <!-- ./wrapper -->
-
-  <!-- jQuery -->
-  <script src="../../plugins/jquery/jquery.min.js"></script>
-  <!-- Bootstrap 4 -->
-  <script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <!-- AdminLTE App -->
-  <script src="../../dist/js/adminlte.min.js"></script>
-  <!-- AdminLTE for demo purposes -->
-  <script src="../../dist/js/demo.js"></script>
-
-<script src="js/jquery-1.10.2.min.js"></script>
-<script src="js/jquery.mask.min.js"></script>
-
-<script type="text/javascript">
-  function fn_teste(valor) {
-    if (valor == 1) {
-      $('#dv1').css('display','block');         
-    } else {
-      $('#dv1').css('display','none');           
-    }
-  }
-
-  function fn_vdrl(valor) {
-    if (valor == 1) {
-      $('#dv2').css('display','block');         
-    } else {
-      $('#dv2').css('display','none');           
-    }
-  }
-
-  function fn_div1(valor) {
-    $('#dv4').css('display','none');
-
-    if ($('#inputNameDosePenicilia').val() != 0) {
-      fn_penicilina($('#inputNameDosePenicilia').val());
-    }
-
-    if(valor == 'Outro') {      
-      $('#dv3').css('display','block');
-    } else {      
-      $('#dv3').css('display','none');
-    }
-  }
-
-  function fn_penicilina(valor) {
-    if(valor == 1) {           
-      $('#dv4').css('display','block');
-
-      if ($('#inputNameEsquemaTerapeutico').val() == 1) {        
-        $('#dv4_1').css('display','block');
-        $('#dv4_2').css('display','none');
-        $('#dv4_3').css('display','none');
-      } else if ($('#inputNameEsquemaTerapeutico').val() == 2) {        
-        $('#dv4_1').css('display','block');
-        $('#dv4_2').css('display','block');
-        $('#dv4_3').css('display','block');
-      } else {
-        $('#dv4').css('display','none');
-      }
-    } else {      
-      $('#dv4').css('display','none');
-    }
-  }
-
-      (function ($) {
-          $(function () {
-              $('.data').mask('00/00/0000', { reverse: false });
-              $('.dinheiro').mask('000.000.000.000,00', { reverse: true, maxlength: 18 });
-              $('.cpf').mask('000.000.000-00', { reverse: false });
-              $('.cnpj').mask('00.000.000/0000-00', { reverse: false });
-              $('.cep').mask('00000-000', { reverse: false });
-              $('.numero').mask('000', { reverse: true});
-              $('.rg').mask('0000000', { reverse: false, maxlength: 7 });
-              $('.telefone').mask('(00) 00000-0000', { reverse: false });
-              $('.telefone2').mask('(00) 0000-0000', { reverse: false });
-              $('.agencia').mask('0000-0', { reverse: false });
-              $('.conta').mask('00000-0', { reverse: false });
-              $('.numero_decimal').mask('00,0', { reverse: true, maxlength: 4 });
-              $('.altura').mask('0,00', { reverse: true, maxlength: 4 });
-              $('.altura2').mask('000', { reverse: true, maxlength: 3 });
-              $('.peso').mask('000', { reverse: true, maxlength: 3 });
-          });
-  })(jQuery);
-</script>
+<body>
+	<div class="container">
+		<main class="d-flex align-items-center min-vh-100 py-3 py-md-0">
+			<div class="container">
+			    <div class="card login-card">
+					<div class="row no-gutters">
+				  		<div class="col-md-6 card-bg">
+							<!--div class="texto text-center">
+								<p></p>
+								</br>
+								<p class="fonte_padrao_tit2"></p>
+								</br>
+								<p></p>
+								</br>
+								<button type="button" class="btn2 btn2-outline-light"><a hef="#"></a></button>	
+							</div-->
+							
+							<div class="brand-wrapper text-center">
+								<img src="img/AdminLTELogo.png" alt="logo" class="logo img-fluid">
+						  	</div>
+							<img src="" alt="" class="login-card-img">
+				  		</div>
+					  	<div class="col-md-6">
+							<div class="card-body">
+						  		<!--div class="brand-wrapper">
+									<img src="imagens/#" alt="logo" class="logo">
+						  		</div-->
+								<p class="fonte_padrao_tit text-center">Seja bem vindo ao SISCSC</p>
+								</br></br>
+								<p class="fonte_padrao_txt text-center">Preencha os dados abaixo para acessar o Sistema</p>
+								</br></br>
+							  	<form action="inicio.html">
+									<div class="form-group">
+										<label for="email" class="sr-only">Email</label>
+										<input type="email" name="email" id="email" class="form-control" placeholder="Email">
+								  	</div>
+								  	<div class="form-group mb-4">
+										<label for="password" class="sr-only">Senha</label>
+										<input type="password" name="password" id="password" class="form-control" placeholder="Senha">
+								  	</div>
+									</br>
+								  	<input name="login" id="login" class="btn btn-block login-btn mb-4" type="submit" value="Login">
+								</form>
+								<div class="row">
+									<div class="col-lg-5 text-center">
+										<a href="#!" class="forgot-password-link text-left">Esqueci a Senha?</a>
+									</div>
+									<div class="col-lg-2"></div>
+									<div class="col-lg-5 text-center">
+										<a href="#!" class="forgot-password-link text-right">Não possuo conta</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+	</div>	
+	<!-- Bootstrap Bundle and Popper -->
+	<script src="bootstrap-4.6.0-dist/bootstrap-4.6.0-dist/js/bootstrap.bundle.min.js"></script>
+	<script src="js/jquery-3.6.0.min.js"></script>
 </body>
-
 </html>
