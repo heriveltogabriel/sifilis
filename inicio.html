@@ -178,27 +178,26 @@
         <div class="card-body">
           <div class="form-group">
             <div class="row">
-              <div class="col-md-6">
-                <label for="inputName">Município</label> <span style="color:red">*</span>                
+              <div class="col-md-4">
+                <label for="inputName">Região</label> <span style="color:red">*</span>                
                 <select id="inputName" class="form-control custom-select">
                   <option selected>Selecione</option>
                 </select>
-              </div>              
-            </div><br />
-            <div class="row">
-              <div class="col-md-6">
-                <label for="inputName">Unidade Básica de Saúde</label>
+              </div>    
+              <div class="col-md-4">
+                <label for="inputName">Município</label>
                 <select id="inputName" class="form-control custom-select">
                   <option selected>Selecione</option>
                 </select>
-              </div>
-              <div class="col-md-6">
-                <label for="inputName">Maternidade</label>
+              </div>     
+              <div class="col-md-4">
+                <label for="inputName">Unidade de Atendimento</label>
                 <select id="inputName" class="form-control custom-select">
                   <option selected>Selecione</option>
                 </select>
-              </div>
-            </div><br />
+              </div>     
+            </div><br>
+           
             <div class="row">
               <div class="col-md-12">
                 <label for="inputName">Nome completo da gestante</label> <span style="color:red">*</span>
@@ -401,20 +400,41 @@
                 </select>
               </div>
             </div><br />
-            <div class="row" id="dv4" style="display: none;">
-              <div class="col-md-4" id="dv4_1">
+            
+            
+            <div class="row" id="dv4-1" style="display: none;">
+              <div class="col-md-6" id="dv4_1-1">
                 <label for="inputName">Data da 1ª Dose</label> <span style="color:red">*</span>
                 <input type="date" id="inputName" class="form-control"> 
+                
+              </div> 
+              <div class="col-md-6" id="dv4_1-2">
+                <label for="inputName">Data aplicação da 1ª Dose</label> <span style="color:red">*</span>
+                <input type="date" id="inputName" class="form-control"> 
+              </div>  
               </div><br />
-              <div class="col-md-4" id="dv4_2">
+              <div class="row" id="dv4-2" style="display: none;">
+              <div class="col-md-6" id="dv4_2-1">
                 <label for="inputName">Agendar data da 2ª Dose</label> <span style="color:red">*</span>
                 <input type="date" id="inputName" class="form-control">
+              </div>
+              <div class="col-md-6" id="dv4_2-2a">
+                <label for="inputName">Data aplicação da 2ª Dose</label> <span style="color:red">*</span>
+                <input type="date" id="inputName" class="form-control">
               </div><br />
-              <div class="col-md-4" id="dv4_3">
+              <div class="row" id="dv4-3" style="display: none;"></div>
+              <div class="col-md-6" id="dv4_3-1">
                 <label for="inputName">Agendar data da 3ª Dose</label> <span style="color:red">*</span>
                 <input type="date" id="inputName" class="form-control">
               </div>
+              <div class="col-md-6" id="dv4_3-2">
+                <label for="inputName">Data aplicação da 3ª Dose</label> <span style="color:red">*</span>
+                <input type="date" id="inputName" class="form-control">
+              </div>
             </div><br />
+            
+            
+            
             <div class="row">
               <div class="col-md-12">
                 <label for="inputDescription">Observações</label>
@@ -499,21 +519,34 @@
 
   function fn_penicilina(valor) {
     if(valor == 1) {           
-      $('#dv4').css('display','block');
+      $('#dv4-1').css('display','block');
+      $('#dv4-2').css('display','block');
+      $('#dv4-3').css('display','block');
+      
 
       if ($('#inputNameEsquemaTerapeutico').val() == 1) {        
-        $('#dv4_1').css('display','block');
-        $('#dv4_2').css('display','none');
-        $('#dv4_3').css('display','none');
+        $('#dv4_1-1').css('display','block');
+        $('#dv4_1-2').css('display','block');
+        $('#dv4_2-1').css('display','none');
+        $('#dv4_2-2').css('display','none');
+        $('#dv4_3-1').css('display','none');
+        $('#dv4_3-2').css('display','none');
       } else if ($('#inputNameEsquemaTerapeutico').val() == 2) {        
-        $('#dv4_1').css('display','block');
-        $('#dv4_2').css('display','block');
-        $('#dv4_3').css('display','block');
+        $('#dv4_1-1').css('display','block');
+        $('#dv4_1-2').css('display','block');
+        $('#dv4_2-1').css('display','block');
+        $('#dv4_2-2').css('display','block');
+        $('#dv4_3-1').css('display','block');
+        $('#dv4_3-2').css('display','block');
       } else {
-        $('#dv4').css('display','none');
+        $('#dv4-1').css('display','none');
+        $('#dv4-2').css('display','none');
+        $('#dv4-3').css('display','none');
       }
     } else {      
-      $('#dv4').css('display','none');
+      $('#dv4-1').css('display','none');
+      $('#dv4-2').css('display','none');
+      $('#dv4-3').css('display','none');
     }
   }
 
